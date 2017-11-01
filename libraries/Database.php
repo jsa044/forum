@@ -10,7 +10,7 @@ class Database {
     private $error;
     private $stmt;
 
-    public function__construct() {
+    public function __construct() {
 		// Set DSN
 		$dsn = 'mysql:host=' .$this->host . ';dbname=' . $this->dbname;
 		// Set Options
@@ -19,7 +19,14 @@ class Database {
 					PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION 
 		
 		);
-		
+		//Create a new PDO instance
+		try {
+			$this->dbh = new PDO ($dsn, $this->user, $this->pass, $options);
+			
+		}  //Catch any errors
+		catch (PDOException $e) {
+			$this->error = $e->getMessage();
+		}
 		
 		
 	}	
