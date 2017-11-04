@@ -1,15 +1,23 @@
 <?php
-
+//Define a class called Database.
 class Database {
+	
+	//Set up variables for credentials which will come from constants in the config file. 
+	// 'private' means they can only be accessed in this class.
+	
 	private $host = DB_HOST;
 	private $user = DB_USER;
 	private $pass = DB_PASS;
 	private $dbname =DB_NAME;
 
-	private $dbh;
-    private $error;
-    private $stmt;
-
+    
+	private $dbh;   //handler for interacting with the database.
+    private $error; //can output errors with this variable.
+    private $stmt;  //Use this for prepared statements.
+    
+    
+    // Whatever is in the construct will automatically be called when you create a new database object.
+    
     public function __construct() {
 		// Set DSN
 		$dsn = 'mysql:host=' .$this->host . ';dbname=' . $this->dbname;
