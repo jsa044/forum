@@ -9,4 +9,4 @@ define("DB_NAME", "talkingspace");
 define("SITE_TITLE", "Welcome to WritingSpace!");
 
 //paths
-define('BASE_URL, http://'.$_SERVER['SERVER_NAME'] . '/talkingspace/');
+define('BASE_URI', 'http://' .$_SERVER['SERVER_NAME'] . '/talkingspace/');
