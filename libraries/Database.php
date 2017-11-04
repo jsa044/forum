@@ -69,6 +69,37 @@ class Database {
 			
 		 }
 	
+	     public function single() {
+	     	$this->execute();
+			return $this->stmt->fetch(PDO::FETCH_OBJ);
+			
+	     }
+		 
+		 public function rowCount() {
+		 	return $this->stmt->rowCount();
+			
+		 }
+		 
+		 public function lastInsertId() {
+		 	return $this->dbh->lastInsertId();
+			
+		 }
+	     
+		 public function beginTransaction() {
+		 	return $this->dbh->beginTransaction();
+			
+		 }
+		 
+		 public function endTransaction() {
+		 	return $this->dbh->commit();
+			
+		 }
+		 
+		 public function cancelTransaction() {
+		 	return $this->dbh->rollback();
+			
+		 }
+		 
 }     //Database Class
 
 
