@@ -59,7 +59,15 @@ class Database {
 		
 	}    // bind function	
 	
-	
+	     public function execute()   {
+	     	return $this->stmt->execute();
+	     }
+		 
+		 public function resultset() {
+		 	$this->execute();
+			return $this->stmt->fetchAll(PDO::FETCH_OBJ);
+			
+		 }
 	
 }     //Database Class
 
