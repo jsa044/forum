@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+	
+	
+	
+	
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome To WritingSpace</title>
-
     <!-- Bootstrap core CSS -->
     <link href="<?php echo BASE_URI;?>templates/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="<?php echo BASE_URI;?>templates/css/custom.css" rel="stylesheet">
   </head>
+  
+  
+  
   <body>
 
                                        <!-- Navigation Bar -->
@@ -24,13 +30,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">WritingSpace</a>
+          <a class="navbar-brand" href="index.php">WritingSpace</a>-->
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="register.html">Create An Account</a></li>
-            <li><a href="create.html">Create a Story</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="register.php">Create An Account</a></li>
+            <li><a href="create.php">Create a Story</a></li>
           </ul>
         </div>             <!--/.nav-collapse -->
       </div>           <!--.container -->
