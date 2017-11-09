@@ -1,6 +1,8 @@
 <?php 
    include('../includes/header.php');
  ?>
+ 
+ 
 						<ul id="topics">
 							<li class="topic">
 							<div class="row">
