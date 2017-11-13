@@ -4,7 +4,6 @@
     //Get Template and Assign variables
     
     $template = new Template('templates/create.php');
-	
 	// Assign vars
 	
 	$template->heading = "This is the Template heading";

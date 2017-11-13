@@ -1,4 +1,4 @@
-<?php iclude('header.php')   ?>
+<?php include('includes/header.php')   ?>
 
 
 <form role="form">
@@ -46,4 +46,4 @@
 
 
 
-<?php iclude('footer.php')   ?>
+<?php include('includes/footer.php')   ?>
