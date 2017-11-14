@@ -13,7 +13,8 @@
 								<div class="topic-content pull-right">
 									<h3><a href="topic.php"><?php echo $topic->title ?></a></h3>
 									<div class="topic-info">
-										<a href="category.php"><?php echo $topic->categories ?></a> >> <a href="profile.php">jsa044</a> >> Posted on: June 12, 2014 
+										<a href="topics.php?category=<?php echo urlFormat($topic->category_id)   ?> "><?php echo $topic->name ?></a> >>
+                                        <a href="topics.php?category=<?php echo urlFormat($topic->user)?>"><?php echo $topic->username ?></a> >> Posted on: June 12, 2014 
 										<span class="badge pull-right">3</span>
 									</div>    <!-- .topic-info -->
 								</div>    <!-- .topic-content pull-right -->
