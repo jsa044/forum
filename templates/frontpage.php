@@ -2,23 +2,25 @@
  		<ul id="topics">
  			
  			<?php if ($topics) :  ?>
+ 			    <?php  foreach($topics as $topic)  :   ?>
  			
 				<li class="topic">
 						<div class="row">
 							<div class="col-md-2">
-								<img class="avatar pull-left" src="images/gravatar.jpg" />
+								<img class="avatar pull-left" src="images/<?php echo $topic->avatar; ?>" />
 							</div>
 							<div class="col-md-10">
 								<div class="topic-content pull-right">
-									<h3><a href="topic.php">How to Write an Interior Monologue</a></h3>
+									<h3><a href="topic.php"><?php echo $topic->title ?></a></h3>
 									<div class="topic-info">
-										<a href="category.php">Point of View</a> >> <a href="profile.php">jsa044</a> >> Posted on: June 12, 2014 
+										<a href="category.php"><?php echo $topic->categories ?></a> >> <a href="profile.php">jsa044</a> >> Posted on: June 12, 2014 
 										<span class="badge pull-right">3</span>
 									</div>    <!-- .topic-info -->
 								</div>    <!-- .topic-content pull-right -->
 							</div>    <!-- .col-md-10 -->
 						</div>    <!-- .row -->
 				</li>
+				<?php endforeach; ?>
 		</ul>	
 		
 		
