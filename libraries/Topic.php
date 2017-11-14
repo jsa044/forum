@@ -26,6 +26,10 @@ class Topic  {
 			                 ORDER BY	create_date DESC
 			                 ");
 	     	
+			//Assign the result set
+			$results= $this->db->resultset();
+			
+			return $results;
 			
 	     }
 	
