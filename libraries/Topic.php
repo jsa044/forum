@@ -31,8 +31,64 @@ class Topic  {
 			
 			return $results;
 			
-	     }
+	         }
 	
+	     //Get total number of Topics
+	
+	    public function getTotalTopics() {
+	    	$this->db->query('SELECT * FROM topics');
+			$rows= $this->db->resultset();
+			return $this->db->rowCount();					
+	    }
+	    
+		//Get total number of categories
+		
+		public function getTotalTopics() {
+	    	$this->db->query('SELECT * FROM categories');
+			$rows= $this->db->resultset();
+			return $this->db->rowCount();	
 }
 
+        //Get Total number of replies
+        
+        
+        public function getTotalReplies($topic_id) {
+        			$this->db->query('SELECT * FROM replies WHERE topic_id = '. $topic_id);
+        			$rows = $this->$db->resultset();
+        		    return $this->db->rowCount();	
+        	
+        } 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

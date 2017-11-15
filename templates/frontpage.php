@@ -16,7 +16,7 @@
 										<a href="topics.php?category=<?php echo urlFormat($topic->category_id)   ?> "><?php echo $topic->name ?></a> >>
                                         <a href="topics.php?category=<?php echo urlFormat($topic->user)?>"><?php echo $topic->username ?></a> >> 
                                         <?php echo formatDate($topic->create_date); ?> 
-										<span class="badge pull-right">3</span>
+										<span class="badge pull-right"><?php echo replyCount($topic->id);  ?></span>
 									</div>    <!-- .topic-info -->
 								</div>    <!-- .topic-content pull-right -->
 							</div>    <!-- .col-md-10 -->
