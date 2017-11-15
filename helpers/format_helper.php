@@ -24,7 +24,22 @@
 	
    }
 
-
+function is_active($category) {
+	
+		if(isset($_GET['category'])) {			
+			if($_GET['category'] == $category) {				
+				return 'active';				
+			} else  {				
+				return '';				
+			}  // End first else statement			
+		} else {			
+			if($category == null) {
+				return 'active';
+			}			
+		} //End second else statement
+			
+}	// End function is_active
+				
 
 
 
