@@ -17,7 +17,7 @@
 							</select>
 							</div>
 								<div class="form-group">
-									<label>Story WritingSpace</label>
+									<label>Topic</label>
 									<textarea id="body" rows="10" cols="80" class="form-control" name="body"></textarea>
 									<script>CKEDITOR.replace('body');</script>
 								</div>

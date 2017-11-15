@@ -24,13 +24,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">WritingSpace</a>
+          <a class="navbar-brand" href="index.html">TalkingSpace</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.php">Home</a></li>
-            <li><a href="register.php">Create An Account</a></li>
-            <li><a href="create.php">Create a Story</a></li>
+            <li><a href="register.php">Create Account</a></li>
+            <li><a href="create.php">Create Topic</a></li>
           </ul>
         </div>             <!--/.nav-collapse -->
       </div>           <!--.container -->
@@ -43,7 +43,7 @@
 			<div class="col-md-8">
 				<div class="main-col">
 					<div class="block">
-						<h1 class="pull-left">Welcome to WritingSpace</h1>
-						<h4 class="pull-right">A Creative Writing Engine</h4>
+						<h1 class="pull-left">Welcome to TalkingSpace</h1>
+						<h4 class="pull-right">A PHP Forum Engine</h4>
 						<div class="clearfix"></div>
 						<hr>
