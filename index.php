@@ -11,6 +11,9 @@
 	// Assign vars
 	
 	$template->topics= $topic->getAllTopics();
+	$template->totalTopics= $topic->getTotalTopics();
+	$template->totalCategories= $topic->getTotalcategories();
+	
 	
 	
 	

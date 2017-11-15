@@ -7,7 +7,7 @@
 				<li class="topic">
 						<div class="row">
 							<div class="col-md-2">
-								<img class="avatar pull-left" src="images/<?php echo $topic->avatar; ?>" />
+								<img class="avatar pull-left" src="images/avatars/<?php echo $topic->avatar; ?>" />
 							</div>
 							<div class="col-md-10">
 								<div class="topic-content pull-right">
@@ -34,7 +34,7 @@
 		<h3>Forum Statistics</h3>
 			<ul>
 				<li>Total Number of Users: <strong>52</strong></li>
-				<li>Total Number of Topics: <strong>10</strong></li>
-				<li>Total Number of Categories: <strong>5</strong></li>
+				<li>Total Number of Topics: <strong><?php echo $totalTopics ?></strong></li>
+				<li>Total Number of Categories: <strong><?php echo $totalCategories ?></strong></li>
 			</ul>
 <?php include('../includes/footer.php'); ?>				

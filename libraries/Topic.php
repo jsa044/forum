@@ -43,7 +43,7 @@ class Topic  {
 	    
 		//Get total number of categories
 		
-		public function getTotalTopics() {
+		public function getTotalcategories() {
 	    	$this->db->query('SELECT * FROM categories');
 			$rows= $this->db->resultset();
 			return $this->db->rowCount();	
