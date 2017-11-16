@@ -17,7 +17,7 @@
 	if(isset($category)) {    //That is if the URL has category in it.
 		
 		$template->topics = $topic->getByCategory($category);
-		$template->title = "Posts In ".$topic->getCategory($category)->name.'"';
+		$template->title = 'Posts In "'.$topic->getCategory($category)->name.'"';
 	}
 	
 	if(!isset($category)) {
