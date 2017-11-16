@@ -6,7 +6,7 @@ define("DB_USER", "root");
 define("DB_PASS", "");
 define("DB_NAME", "talkingspace");
 
-define("SITE_TITLE", "Welcome to WritingSpace!");
+define("SITE_TITLE", "Welcome to TalkingSpace!");
 
 //paths
 define('BASE_URI', 'http://' .$_SERVER['SERVER_NAME'] . '/talkingspace/');
