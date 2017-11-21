@@ -1,12 +1,14 @@
 <?php
 /*
  * Redirect To Page
+ * Takes three arguments. Page we want to redirect to. Message sent through a session. 
+ * Message type could be error or success
 */
 function redirect($page = FALSE, $message = NULL, $message_type = NULL) {
 	if (is_string ($page)) {
 		$location = $page;
 	} else {
-		$location = $_SERVER ['SCRIPT_NAME'];
+		$location = $_SERVER ['SCRIPT_NAME'];    //Sends to current page if we don't include a page..
 	}
 
 	//Check For Message
@@ -26,7 +28,7 @@ function redirect($page = FALSE, $message = NULL, $message_type = NULL) {
 }
 
 /*
- * Display Message
+ * Display Message.  Checks to see if the session variable is set or is empty.
  */
 function displayMessage(){
 	if(!empty($_SESSION['message'])) {
@@ -34,7 +36,7 @@ function displayMessage(){
 		//Assign Message Var
 		$message = $_SESSION['message'];
 			
-		if(!empty($_SESSION['message_type'])) {
+		if(!empty($_SESSION['message_type'])) {     
 			//Assign Type Var
 			$message_type = $_SESSION['message_type'];
 			//Create Output

@@ -26,7 +26,7 @@ class User{
 			$this->db->bind(':about', $data['about']);
 			$this->db->bind(':last_activity', $data['last_activity']);
 			//Execute
-			if($this->db->execute()){
+			if($this->db->execute()){   //Inserts into database here.
 				return true;
 			} else {
 				return false;

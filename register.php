@@ -7,6 +7,8 @@ $topic = new Topic;
 //Create User Object
 $user = new User;
 
+// Check to see if the form was submitted.  Then get post data and put into the data array.  Md5 encrypts passwords.
+
 if(isset($_POST['register'])){
 	//Create Data Array
 	$data = array();

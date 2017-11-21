@@ -47,7 +47,7 @@ class User{
 				|| ($_FILES["avatar"]["type"] == "image/pjpeg")
 				|| ($_FILES["avatar"]["type"] == "image/x-png")
 				|| ($_FILES["avatar"]["type"] == "image/png"))
-				&& ($_FILES["avatar"]["size"] < 100000)
+				&& ($_FILES["avatar"]["size"] < 200000)
 				&& in_array($extension, $allowedExts)) {
 			if ($_FILES["avatar"]["error"] > 0) {
 				redirect('register.php', $_FILES["avatar"]["error"], 'error');
