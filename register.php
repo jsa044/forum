@@ -7,6 +7,9 @@ $topic = new Topic;
 //Create User Object
 $user = new User;
 
+//Create Validator Object
+  $validate = new Validator;
+
 // Check to see if the form was submitted.  Then get post data and put into the data array.  Md5 encrypts passwords.
 
 if(isset($_POST['register'])){
@@ -19,7 +22,7 @@ if(isset($_POST['register'])){
 	$data['password2'] = md5($_POST['password2']);
 	$data['about'] = $_POST['about'];
 	$data['last_activity'] = date("Y-m-d H:i:s");
-	
+	/*
 	//Upload Avatar Image
 	if($user->uploadAvatar()){
 		$data['avatar'] = $_FILES["avatar"]["name"];
@@ -33,7 +36,7 @@ if(isset($_POST['register'])){
 	} else {
 		redirect('index.php', 'Something went wrong with registration', 'error');
 	}
-}
+}*/
 
 //Get Template & Assign Vars
 $template = new Template('templates/register.php');
