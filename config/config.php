@@ -8,5 +8,6 @@ define("DB_NAME", "talkingspace");
 
 define("SITE_TITLE", "Welcome to TalkingSpace!");
 
-//paths
+
+//paths for the URI
 define('BASE_URI', 'http://' .$_SERVER['SERVER_NAME'] . '/talkingspace/');
